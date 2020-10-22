@@ -1,5 +1,8 @@
 @import "../../scss/const.scss";
 
 .chart {
-
+  min-width: 500px;
+  min-height: 300px;
+  border-radius: $border;
+  background-color: $green-l;
 }
