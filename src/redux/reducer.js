@@ -17,7 +17,7 @@ const init = {
 const reducer = produce((draft, action) => {
   switch (action.type) {
     case SET_ACTIVE_CURRENCY:
-      draft.activeCurrency = action.activeCurrency;
+      draft.activeCurrency = action.currency;
       return draft;
     case SET_DATE:
       draft.startDate = action.startDate;

@@ -1,1 +1,11 @@
 @import "../../scss/const.scss";
+
+.widget {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  border-radius: $border;
+}
