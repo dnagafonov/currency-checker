@@ -1,0 +1,12 @@
+@import "../../scss/const.scss";
+
+.widget {
+  width: 250px;
+  height: 200px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $white;
+  border-radius: $border;
+}

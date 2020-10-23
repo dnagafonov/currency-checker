@@ -1,0 +1,3 @@
+export const SET_ACTIVE_CURRENCY = "SET_ACTIVE_CURRENCY";
+export const SET_DATE = "SET_DATE";
+export const SET_EXCHANGE_RATES = "SET_EXCHANGE_RATES"; 
