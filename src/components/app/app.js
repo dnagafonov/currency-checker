@@ -4,6 +4,7 @@ import Header from "../header/header";
 
 import "./app.scss";
 import "../../scss/general.scss";
+import Chart from "../chart/chart";
 
 function App() {
   return (
