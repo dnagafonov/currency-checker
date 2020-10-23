@@ -8,6 +8,7 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
+import PropTypes from 'prop-types';
 
 import "./chart.scss";
 
@@ -33,5 +34,13 @@ const Chart = ({ rates }) => {
     </LineChart>
   );
 };
+
+Chart.propTypes = {
+  rates: PropTypes.arrayOf(PropTypes.exact({
+    Date: PropTypes.string.isRequired,
+    Cur_OfficialRate: PropTypes.number.isRequired,
+    Cur_ID: PropTypes.number.isRequired
+  }))
+}
 
 export default memo(Chart);

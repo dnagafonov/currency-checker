@@ -4,3 +4,8 @@ import { toast } from 'react-toastify';
    position: toast.POSITION.TOP_CENTER,
    autoClose: 5000
  });
+
+ export const infoToast = message => toast.info(message, { 
+  position: toast.POSITION.TOP_CENTER,
+  autoClose: 3000
+});

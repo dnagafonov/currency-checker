@@ -7,6 +7,7 @@ import {
   getActiveCurrencySelector,
 } from "../../redux/selectors";
 import Widget from "./widget";
+import PropTypes from 'prop-types';
 
 const WidgetContainer = ({
   setDate,
@@ -26,6 +27,14 @@ const WidgetContainer = ({
     />
   );
 };
+
+WidgetContainer.propTypes = {
+  setDate: PropTypes.func.isRequired,
+  setActiveCurrency: PropTypes.func.isRequired,
+  startDate: PropTypes.string.isRequired,
+  endDate: PropTypes.string.isRequired,
+  activeCurrency: PropTypes.string.isRequired
+}
 
 const mapState = (state) => ({
   startDate: getStartDateSelector(state),
